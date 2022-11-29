@@ -1,5 +1,7 @@
 import "./index.css";
 import { useState, useEffect } from "react";
+import { AiTwotoneMail, AiOutlinePhone } from "react-icons/ai";
+import { GoLocation } from "react-icons/go";
 
 function App() {
   const [user, setUser] = useState("");
@@ -30,9 +32,12 @@ function App() {
         </div>
         <div className="other-stuff">
           <div className="info icon">
-            <i className="fa-regular fa-envelope"></i>
-            <i className="fa-regular fa-phone"></i>
-            <i className="fa-regular fa-location-pin"></i>
+            <AiTwotoneMail />
+            <AiOutlinePhone />
+            <GoLocation />
+            {/* <i className="fa-regular fa-envelope"></i> */}
+            {/* <i className="fa-regular fa-phone"></i> */}
+            {/* <i className="fa-regular fa-location-pin"></i> */}
           </div>
 
           <div className="info email-phone-location">
